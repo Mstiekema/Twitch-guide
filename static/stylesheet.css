@@ -1,0 +1,40 @@
+.top {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #4b317c;
+	height: 60px;
+	z-index: 1;
+}
+
+.main {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	top: 45px;
+	background-color: grey;	
+	padding-left: 20px;
+}
+
+.main h2 {
+	padding-top: 10px;
+}
+
+.menu {
+	xD: Cx;
+}
+
+html {
+	background-color: #6441a4;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+span {
+	color: #929292;
+	padding-left: 20px;
+	display: flex;
+	align-items: center; 
+	vertical-align: middle;
+}

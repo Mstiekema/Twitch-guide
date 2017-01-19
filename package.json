@@ -1,0 +1,22 @@
+{
+  "name": "twitchguide",
+  "version": "1.0.0",
+  "description": "A Twitch guide for the Dutch",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mstiekema/Twitch-guide.git"
+  },
+  "keywords": [
+    "Twitch"
+  ],
+  "author": "Mstiekema",
+  "bugs": {
+    "url": "https://github.com/Mstiekema/Twitch-guide/issues"
+  },
+  "homepage": "https://github.com/Mstiekema/Twitch-guide#readme",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0"
+  }
+}
