@@ -16,6 +16,9 @@
 	top: 45px;
 	background-color: grey;	
 	padding-left: 20px;
+	padding-right: 20px;
+	width: 500px;
+	margin: 20px;
 }
 
 .main h2 {
@@ -28,7 +31,18 @@
 
 html {
 	background-color: #6441a4;
-	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+	display: inline-block;
+	padding-right: 40px;
+	margin-left: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #929292;
 }
 
 span {

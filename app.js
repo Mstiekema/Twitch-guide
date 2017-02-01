@@ -11,6 +11,18 @@ app.get('/', function (req, res) {
 	res.render('index.html')
 })
 
+app.get('/over', function (req, res) {
+	res.render('watistwitch.html')
+})
+
+app.get('/layout', function (req, res) {
+	res.render('twitchlayout.html')
+})
+
+app.get('/icons', function (req, res) {
+	res.render('icons.html')
+})
+
 app.listen(2000, function () {
 	console.log('Running the Twitch guide website!')
 })
