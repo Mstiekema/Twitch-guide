@@ -19,9 +19,14 @@ app.get('/layout', function (req, res) {
 	res.render('twitchlayout.html')
 })
 
-app.get('/icons', function (req, res) {
-	res.render('icons.html')
+app.get('/chat', function (req, res) {
+	res.render('chat.html')
 })
+
+app.get('/plugins', function (req, res) {
+	res.render('plugins.html')
+})
+
 
 app.listen(2000, function () {
 	console.log('Running the Twitch guide website!')

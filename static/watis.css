@@ -1,0 +1,132 @@
+.click {
+  position: absolute;
+  opacity: 0.2;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 10, 61, 0.5);
+}
+
+#modalInfo {
+  background-color: #9a8da2;
+  margin: 5% auto;
+  padding: 20px;
+  border: 3px solid #30113b;
+  height: 60%;
+  width: auto;
+  overflow-y: auto;
+  box-shadow: 10px 10px 10px rgba(37, 10, 61, 0.7);
+}
+
+#modalText {
+  float: left;
+  width: 300px;
+}
+
+#modalImg {
+  float: right;
+  overflow-y: auto;
+}
+
+#followSub {
+ width: 175px;
+ top: 265px;
+ height: 35px;
+ left: 660px;
+}
+
+#channelInfo {
+  width: 370px;
+  top: 265px;
+  height: 35px;
+  left: 260px;
+}
+
+#aanbevolen {
+  width: 168px;
+  top: 200px;
+  height: 120px;
+  left: 0px;
+}
+
+#infoPanels {
+  width: 410px;
+  top: 830px;
+  height: 973px;
+  left: 178px;
+}
+
+#feed {
+  width: 245px;
+  top: 830px;
+  height: 725px;
+  left: 588px;
+}
+
+#meerTwitch {
+  width: 168px;
+  top: 320px;
+  height: 130px;
+  left: 0px;
+}
+
+#volgenBladeren {
+  width: 168px;
+  top: 40px;
+  height: 80px;
+  left: 0px;
+}
+
+#vrienden {
+  width: 168px;
+  top: 130px;
+  height: 60px;
+  left: 0px;
+}
+
+#titleGame {
+  width: 653px;
+  top: 765px;
+  height: 45px;
+  left: 180px;
+}
+
+#playerVod {
+  width: 653px;
+  top: 310px;
+  height: 455px;
+  left: 180px;
+}
+
+#chat {
+  width: 239px;
+  top: 0px;
+  height: 1804px;
+  right: 0px;
+}
+
+#login {
+  width: 168px;
+  top: 1595px;
+  height: 209px;
+  left: 0px;
+}
+
+#whispers {
+  width: 168px;
+  top: 1595px;
+  height: 209px;
+  left: 6000px;
+}
+
+#aboutTwitch div.click:hover {
+  background-color: #660388;
+  cursor: pointer;
+}

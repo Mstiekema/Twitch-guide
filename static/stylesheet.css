@@ -6,6 +6,7 @@
 	background-color: #4b317c;
 	height: 60px;
 	z-index: 1;
+	box-shadow: 0px 6px 6px rgba(37, 10, 61, 0.7);
 }
 
 .main {
@@ -37,14 +38,19 @@
 	top: 0px;
 	line-height: 100px;
 	margin-top: -20px;
+	margin-left: -5px;
 	height: 80px;
 }
 
 .menu {
-	padding-left: 20px;
+	padding-left: 25px;
 }
 
 .menuItem:hover {
+	background-color: #352355;
+}
+
+.active {
 	background-color: #352355;
 }
 

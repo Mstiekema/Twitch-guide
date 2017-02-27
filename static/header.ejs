@@ -2,13 +2,25 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+<script>
+$(document).ready(function () {
+	var loc = $('.menu').find('a').attr('href');
+	var url = location.href.split('/')
+	var urlEnd = "/" + url[url.length - 1]
+	var div = $('a[href^="'+urlEnd+'"]')[0];
+  $(".menu a").removeClass("active");
+  $(div).children().addClass('active');
+});
+</script>
 <title>Twitch guide</title>
 </head>
 <body>
 <div class="top"><span><div class="menu">
 	<a href="/"><h3 class="menuItem">Home</h3></a>
 	<a href="/over"><h3 class="menuItem">Over</h3></a>
+	<a href="/chat"><h3 class="menuItem">Chat</h3></a>
 	<a href="/layout"><h3 class="menuItem">Layout</h3></a>
-	<a href="/icons"><h3 class="menuItem">Icons</h3></a>
+	<a href="/plugins"><h3 class="menuItem">Plugins</h3></a>
 </div></span></div>
