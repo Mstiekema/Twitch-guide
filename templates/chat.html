@@ -1,38 +1,20 @@
 <% include ../static/header.ejs %>
-<div class="main">
+<div class="col-md-4 main">
 <h2>Twitch chat</h2>
 <p>
   In de Twitch chat heb je heel veel mensen.
-  Om wat onderscheid te maken tussen deze mensen kunnen er ook mensen zijn die bepaalde icons voor hun naam hebben.<br><br>
-
-  <b>Mensen die jou kunnen helpen in chat</b><br>
-  <img src="http://i.imgur.com/jeAkmQy.png"> <b>Channel moderator</b> Dit zijn mensen die jou kunnen helpen in het kanaal waar je aan het kijken bent.
-  Ze geven antwoorden op je vragen en houden de chat een rustige plek. <br>
-  <img src="http://i.imgur.com/yDZq8TX.png"> <b>Broadcaster</b> Dit is de icon van de streamer waar je naar aan het kijken bent.
-  Tijdens de stream praat deze persoon waarschijnlijk nauwelijks in de chat omdat hij of zij bezig is met het streamen.<br>
-  <img src="http://i.imgur.com/DOTT3Qu.png"> <b>Global moderator</b> Dit zijn vrijwilligers die bij Twitch werken om een bepaald
-  deel van Twitch in de gaten te houden. Je kan ze zien als een channel mod, maar dan over de hele website!<br>
-  <img src="http://i.imgur.com/SppyShU.png"> <b>Admin</b> Dit zijn betaalde medewerkers bij Twitch die zorgen dat streamers en
-  kijkers zich houden aan de regels van Twitch zelf.<br>
-  <img src="http://i.imgur.com/JACDsjP.png"> <b>Staff</b> Staff zijn de mensen die bij Twitch zelf werken en zorgen dat de website in leven blijft. <br><br>
-
-  <b>Betaalde icons</b><br>
-  <img src="http://i.imgur.com/MQTUiXI.png"> <b>Turbo</b> Turbo is een betaalde service van Twitch waarbij je extra features kan krijgen.
-  Je betaald 9 dollar per maand voor; Geen advertenties, andere emoticons, deze badge, meer chatkleuren en meer opslagruimte voor video's.
-  <a href="https://www.twitch.tv/products/turbo/ticket/new" target="_blank">Klik hier</a> als je meer info over Turbo wilt of het wilt kopen. <br>
-  <img src="http://i.imgur.com/jc0JCji.png"> <b>Prime</b> Prime is een vernieuwde methode om Twitch en hun streamers te helpen. Door gebruik te maken
-  van Amazon Prime kan je voor 11 dollar per maand veel extra dingen krijgen. Hieronder valt; Spullen voor in games, geen ads, gratis sub voor 1 kanaal per maand,
-  all dingen van Turbo en alle dingen van Amazon Prime! Dit is echter helaas nog niet beschikbaar in Nederland. Sommige mensen in Belgie of in grensgebieden kunnen
-  het al wel halen. Voor meer info over Prime klik <a src="https://help.twitch.tv/customer/portal/articles/2449458" target="_blank">HIER</a>.<br>
-  <img src="http://i.imgur.com/A3EIOfg.png"> <b>Subscriber</b> Elke channel heeft zijn eigen subscriber icon. Je kan dit ook zien door met je muis over
-  de sub icon te gaan om te zien dat het een sub icon is en te zien hoeveel maanden deze persoon al ongeveer is geabonneerd op de streamer. <br>
-  <img src="http://i.imgur.com/NcrukQO.png"> <b>Cheer</b> Cheers zijn een manier om de streamer die je aan het kijken bent te supporten! Dit kan je door
-  bits te doneren. Deze kan je kopen via Amazon. Elke bit is 1 cent waard. Bij de zoveel bits krijg je steeds weer een nieuwe badge. Meer informatie
-  over cheering en bits kan je <a src="https://help.twitch.tv/customer/portal/articles/2449458" target="_blank">HIER</a> vinden.<br>
+  Om wat onderscheid te maken tussen deze mensen kunnen er ook mensen zijn die bepaalde icons voor hun naam hebben.
+  Deze icons zeggen wat over hun 'macht' in de Twitch chat. Sommige icons zijn door ieder persoon te krijgen, anderen
+  zijn maar voor een paar mensen.
 </p>
 </div>
+<div class="col-md-7" id="chatMsgs"></div>
+<div id="modal">
+  <div id="modalInfo"></div>
+</div>
 </body>
-
+<script type="text/javascript" src="./chat.js"></script>
+<link rel="stylesheet" type="text/css" href="./chat.css">
 <!--
 Wat ik eigenlijk uiteindelijk wil is dat je verschillende messages ziet over heel de pagina met ieder zijn eigen icon.
 Als je dan op een bericht klikt krijg je info over dit icon. Dit is voor nu zodat ik alvast wat info heb over wat ik bij dat icon wil.

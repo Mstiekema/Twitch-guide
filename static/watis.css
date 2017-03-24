@@ -1,3 +1,11 @@
+.aboutTwitch {
+	top: 85px;
+	margin-bottom: 20px;
+	overflow-y: auto;
+  overflow-x: hidden;
+	bottom: 0px;
+}
+
 .click {
   position: absolute;
   opacity: 0.2;
@@ -109,7 +117,7 @@
   width: 239px;
   top: 0px;
   height: 1804px;
-  right: 0px;
+  right: 15px;
 }
 
 #login {
@@ -126,7 +134,8 @@
   left: 6000px;
 }
 
-#aboutTwitch div.click:hover {
+.aboutTwitch div.click:hover {
+  margin-left: 15px;
   background-color: #660388;
   cursor: pointer;
 }
