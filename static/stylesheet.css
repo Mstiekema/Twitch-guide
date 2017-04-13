@@ -10,11 +10,33 @@
 }
 
 .main {
-	position: absolute;
 	top: 65px;
 	background-color: #9c909c;
 	margin: 20px;
 	box-shadow: 2px 2px 2px rgba(37, 10, 61, 0.7);
+}
+
+.navRow {
+	padding-left: 15px;
+}
+
+.submain {
+	position: relative;
+	top: 65px;
+	background-color: #9c909c;
+	margin: auto;
+	margin-top: 20px;
+	width: 70%;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(37, 10, 61, 0.7);
+}
+
+.submain h2 {
+	margin-top: 0px;
+}
+
+.submain b {
+	font-size: 18px;
 }
 
 .main a {
@@ -37,7 +59,7 @@
 	padding-left: 5px;
 }
 
-.menuItem:hover {
+a .menuItem:hover {
 	background-color: #352355;
 }
 

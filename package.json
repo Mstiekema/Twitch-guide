@@ -17,6 +17,15 @@
   "homepage": "https://github.com/Mstiekema/Twitch-guide#readme",
   "dependencies": {
     "ejs": "^2.5.5",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-env": "^1.3.3",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0"
   }
 }

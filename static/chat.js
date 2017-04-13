@@ -10,7 +10,10 @@ var chatMsg = {
    maar dan over de hele website!'
 },
   'mod': {'name': 'Moderator', 'short': 'Helpen mensen in de chat en houden het een rustige plek', 'link': 'http://i.imgur.com/jeAkmQy.png', 'long':
-  'Dit zijn mensen die jou kunnen helpen in het kanaal waar je aan het kijken bent. Ze geven antwoorden op je vragen en houden de chat een rustige plek.'
+  'Omdat de streamer zelf bezig is met de livestream, kan hij niet altijd bezig zijn met de regels in de chat, daarom stelt de streamer vaak "moderatos" aan. \
+  Deze mensen houden voor hem de chat in de gaten. Zij kunnen dan ook mensen die zich misdragen een "purge" of een "timeout geven". Als je een purge krijgt, \
+  dan worden al jou berichten uit de chat verwijderd. Als je een timeout krijgt, dan kan je voor een aantal minuten of uren niet meer praten. Deze tijden kunnen \
+  variëren, maar meestal is het voor 10 minuten lang. Het is ook mogelijk dat je een ban krijgt. Wanneer je wordt gebanned, kan je voor altijd niks meer in die chat zeggen.'
 },
   'streamer': {'name': 'Broadcaster', 'short': 'Dit is de persoon die aan het streamen is op het kanaal', 'link': 'http://i.imgur.com/yDZq8TX.png', 'long':
   'Dit is de icon van de streamer waar je naar aan het kijken bent. Tijdens de stream praat deze persoon waarschijnlijk nauwelijks in de chat omdat \
