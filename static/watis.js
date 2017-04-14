@@ -38,7 +38,8 @@ var allTexts = {
     infoPanels: {text:"Dit is de feed, wat ook wel bekend staat als Pulse. Hier kunnen streamers updates achterlaten. Dit kunnen updates zijn over wanneer ze gaan  \
   streamen of misschien over iets totaal anders. Kijkers kunnen ook op deze berichten in de feed reageren door middel van een reactie of alleen een emote. \
   De feed is niet iets wat iedereen aan heeft staan, dus je zal het niet altijd op elk kanaal terugvinden. Echter kan je wel alle messages terug vinden op de home pagina \
-  van Twitch zelf.", name:"Pulse", short:["Update feed van de streamer waar je op kan reageren"]},
+  van Twitch zelf. <a href='https://help.twitch.tv/customer/nl/portal/articles/2752590-zo-gebruik-je-pulse' target='_blank'>Lees hier meer over Pulse</a>", name:"Pulse",
+  short:["Update feed van de streamer waar je op kan reageren"]},
     volgenBladeren: {text:"Dit zijn waarschijnlijk wel twee van de belangrijkste dingen op Twitch. Als je op volgend drukt, kan je alle kanalen zien die jij hebt gevolgd. \
   Bladeren geeft alle kanalen weer die op dat moment live zijn. Deze staan automatisch gesorteerd op het aantal kijkers. Zelf kan je ook nog een taal filter \
   aanzetten zodat je bijvoorbeeld alleen nog maar Nederlandse kanalen ertussen ziet staan. Dit is erg handig om nieuwe streams te ontdekken. Als je plugins \
