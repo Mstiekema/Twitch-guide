@@ -25,7 +25,9 @@ var allTexts = {
     channelInfo: {text:"In deze balk kan je redelijk wat dingen zien en naar toe gaan. Als eerste zie je links de naam van de channel die je aan het kijken bent met het \
   logo daarnaast. Hiernaast kan je alle opgeslagen video's van dat kanaal zien. Dit kunnen eerdere streams zijn, highlight van streams of zelf geüploade video's. \
   Rechts staan alle clips die zijn gemaakt. Je kan deze sorteren op de top clips per tijdsvak. In deze balk staan ook het aantal volgers dat de stream heeft en \
-  hoeveel mensen de streamer zelf volgt.", name:"Channel info", short:["Links met meer dingen dan de stream", "Oude streams en clips terugkijken"]},
+  hoeveel mensen de streamer zelf volgt. In deze balk kan je ook de evenementen zien die streamer heeft gemaakt. Dit kunnen bijvoorbeeld speciale streams zijn voor een \
+  verjaardag. Een streamer kan ook zijn video's of VOD's in een collectie doen. Collecties zijn playlists van verschillende video's, VOD's en uploads.", name:"Kanaal info",
+  short:["Links met meer dingen dan de stream", "Oude streams en clips terugkijken"]},
     aanbevolenKanalen: {text:"Dit deel van de website laat een aantal aanbevolen kanalen zien. Deze kanalen kunnen kanalen zijn die je recent hebt gezien of kanalen die lijken op \
   andere kanalen die je recent hebt gezien. Het is altijd handig om een kijkje te nemen bij deze streams, misschien zit er wat leuks tussen!", name:"Aanbevolen Kanalen",
   short:["Laat andere, nieuwe kanalen zien voor je om te kijken"]},
