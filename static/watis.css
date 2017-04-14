@@ -98,14 +98,21 @@
   left: -15px;
 }
 
-#infoPanels {
+#nuLive {
+	width: 135px;
+  top: 38px;
+  height: 155px;
+  left: -15px;
+}
+
+#feed {
   width: 390px;
   top: 803px;
   height: 277px;
   left: 475px;
 }
 
-#feed {
+#infoPanels {
   width: 350px;
   top: 803px;
   height: 277px;
