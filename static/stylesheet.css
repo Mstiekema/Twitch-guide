@@ -35,11 +35,15 @@
 	margin-top: 0px;
 }
 
+.submain h3 {
+	margin-top: 5px;
+}
+
 .submain b {
 	font-size: 18px;
 }
 
-.main a {
+.main a, .submain a {
 	color: #6441A4
 }
 
