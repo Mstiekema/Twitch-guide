@@ -9,8 +9,36 @@
 	box-shadow: 0px 6px 6px rgba(37, 10, 61, 0.7);
 }
 
+.hidden {
+	display: none;
+}
+
+#dropdown-menu {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	left: 20px;
+	top: 10px;
+	color: #e2e2e2;
+	margin-left: 50px;
+}
+
+#menuCont {
+	display: none;
+	top: 10px;
+	margin-right: 40px;
+	background-color: #5d3d9a;
+	box-shadow: 2px 2px 2px rgba(37, 10, 61, 0.7);
+	z-index: 1;
+}
+
+.dropdown:hover #menuCont {
+  display: block;
+}
+
 .main {
 	top: 65px;
+	min-width: 300px;
 	background-color: #e2e2e2;
 	margin: 20px;
 	box-shadow: 2px 2px 2px rgba(37, 10, 61, 0.7);
@@ -59,9 +87,26 @@
 	color: #e2e2e2;
 }
 
+.menuItemDrop {
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+	top: 0px;
+	width: 100%;
+	line-height: 100px;
+	height: 60px;
+	line-height: 60px;
+	color: #e2e2e2;
+}
+
+a .menuItemDrop:hover {
+	background-color: #352355;
+}
+
 .menu {
-	padding-left: 5px;
+	text-align: center;
 	width: 900px;
+	margin-left: -50px;
 }
 
 a .menuItem:hover {
@@ -84,7 +129,6 @@ a .menuItem:hover {
 html, .row {
 	background-color: #8c74b9;
 	font-family: 'Roboto', sans-serif;
-	min-width: 550px;
 }
 
 h4 {

@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./basic.js"></script>
 <script>
 $(document).ready(function () {
 	var loc = $('.menu').find('a').attr('href');
@@ -27,13 +28,27 @@ $(document).ready(function () {
 <title>Twitch guide</title>
 </head>
 <body>
-<div class="col-md-12 top navbar-fixed-top"><span><div class="menu">
-	<h4 class="menuItem">NL Twitch Guide</h4>
-	<a href="/"><h4 class="menuItem">Home</h4></a>
-	<a href="/over"><h4 class="menuItem">Over</h4></a>
-	<a href="/chat"><h4 class="menuItem">Chat</h4></a>
-	<a href="/navigatie"><h4 class="menuItem">Navigatie</h4></a>
-	<a href="/plugins"><h4 class="menuItem">Plugins</h4></a>
-	<a href="/live"><h4 class="menuItem">Zelf livestreamen</h4></a>
+<div class="col-md-12 top navbar-fixed-top"><span><div class="menu" id="classDiv">
+
+	<div class="standard hidden" id="standard-menu"><h4 class="menuItem">NL Twitch Guide</h4>
+		<a href="/"><h4 class="menuItem">Home</h4></a>
+		<a href="/over"><h4 class="menuItem">Over</h4></a>
+		<a href="/chat"><h4 class="menuItem">Chat</h4></a>
+		<a href="/navigatie"><h4 class="menuItem">Navigatie</h4></a>
+		<a href="/plugins"><h4 class="menuItem">Plugins</h4></a>
+		<a href="/live"><h4 class="menuItem">Zelf livestreamen</h4></a>
+	</div>
+
+	<div class="dropdown hidden" id="dropdown-menu">
+	<h4 id="dropTitle">NL Twitch Guide</h4>
+	<div id="menuCont">
+		<a href="/"><h4 class="menuItemDrop">Home</h4></a><br>
+		<a href="/over"><h4 class="menuItemDrop">Over</h4></a><br>
+		<a href="/chat"><h4 class="menuItemDrop">Chat</h4></a><br>
+		<a href="/navigatie"><h4 class="menuItemDrop">Navigatie</h4></a><br>
+		<a href="/plugins"><h4 class="menuItemDrop">Plugins</h4></a><br>
+		<a href="/live"><h4 class="menuItemDrop">Zelf livestreamen</h4></a><br>
+	</div></div>
+
 </div></span></div>
 <div class="container-fluid"><div class="row">
