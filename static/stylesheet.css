@@ -11,7 +11,7 @@
 
 .main {
 	top: 65px;
-	background-color: #9c909c;
+	background-color: #e2e2e2;
 	margin: 20px;
 	box-shadow: 2px 2px 2px rgba(37, 10, 61, 0.7);
 }
@@ -23,7 +23,7 @@
 .submain {
 	position: relative;
 	top: 65px;
-	background-color: #9c909c;
+	background-color: #e2e2e2;
 	margin: auto;
 	margin-top: 20px;
 	width: 70%;
@@ -32,7 +32,7 @@
 }
 
 .submain h2 {
-	margin-top: 0px;
+	margin-top: 5px;
 }
 
 .submain h3 {
@@ -56,11 +56,12 @@
 	margin-top: -20px;
 	margin-left: -5px;
 	height: 80px;
-	color: #9c909c;
+	color: #e2e2e2;
 }
 
 .menu {
 	padding-left: 5px;
+	width: 900px;
 }
 
 a .menuItem:hover {
