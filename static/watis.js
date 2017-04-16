@@ -9,11 +9,11 @@ $.getJSON("./watis.json", function(data) {
       var short = allModal[this.id].short
       var imgWidth = allModal[this.id].width
       $("#modalImg").attr("src", link)
-      $("#modalText").html(title+"<br>")
+      $("#modalText").html("<h3 style='margin-top:0px;'>"+title+"</h3>")
       for(var i = 0; i < short.length; i++) {
-        $("#modalText").append("<br>" + "x " + short[i])
+        $("#modalText").append("<b>► " + short[i] + "</b><br>")
       }
-      $("#modalText").append("<br><br>" + text)
+      $("#modalText").append("<br>" + text)
       var width = imgWidth + 320
       $("#modalInfo").width(width)
       $('#modalInfo').removeClass('animated bounceOutUp');
