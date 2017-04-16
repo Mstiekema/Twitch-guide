@@ -1,6 +1,5 @@
 $.getJSON("./watis.json", function(data) {
   var allModal = data.allModal
-  console.log(allModal)
   var clicks = document.getElementsByClassName("click");
   for (var i = 0; i < clicks.length; i++) {
     clicks[i].addEventListener('click', function() {
