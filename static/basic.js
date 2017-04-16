@@ -15,5 +15,5 @@ $(document).ready(function(){
   } else {
     $("#standard-menu").removeClass("hidden");
     $("#dropdown-menu").addClass("hidden");
-  }  
+  }
 });

@@ -1,104 +1,33 @@
-var clicks = document.getElementsByClassName("click");
-var allImgs = {
-  followSub: 'http://i.imgur.com/kbczwui.png', followSubWidth: 175,
-  channelInfo: 'http://i.imgur.com/7WXBFma.png', channelInfoWidth: 844,
-  aanbevolenKanalen: 'http://i.imgur.com/IimUSYZ.png ', aanbevolenKanalenWidth: 228,
-  aanbevolenVrienden: 'http://i.imgur.com/K3pN882.png ', aanbevolenVriendenWidth: 231,
-  feed: 'http://i.imgur.com/EPB0PHH.png', infoPanelsWidth: 608,
-  infoPanels: 'http://i.imgur.com/nauuThQ.png', feedWidth: 680,
-  login: 'http://i.imgur.com/3L5ywsz.png', loginWidth: 240,
-  volgenBladeren: 'http://i.imgur.com/X9n9IjZ.png', volgenBladerenWidth: 928,
-  vrienden: 'http://i.imgur.com/jUcDylE.png', vriendenWidth: 227,
-  titleGame: 'http://i.imgur.com/HcIBbJv.png', titleGameWidth: 653,
-  playerVod: 'http://i.imgur.com/7zGfc1x.png', playerVodWidth: 649,
-  chat: 'http://i.imgur.com/xCJ1RAM.png', chatWidth: 226,
-  whispers: 'http://i.imgur.com/26aHxTw.png', whispersWidth: 54,
-  nuLive: 'http://i.imgur.com/QSNE3xb.png', nuLiveWidth: 232
-}
-var allTexts = {
-    followSub: {text:"Met deze knoppen kan je een kanaal volgen of erop abonneren. Er is een groot verschil tussen deze twee. Volgen kan je vergelijken met abonneren \
-  op YouTube. Door te abonneren op een kanaal betaal je per maand zo'n 5,50 a 6 euro (5 dollar + 21% BTW). Hiermee support je de streamer die je kijkt en krijgt \
-  allemaal extra features. Twitch zelf geeft je een speciale badge in die chat die laat zien dat je een sub bent. Daarnaast heb je geen last van slow-mode, kan \
-  je praten tijdens sub-only mode en zie je minder reclames. Meestal hebben streamers zelf ook extra dingen voor hun subs, maar daarvoor moet je naar hun informatie \
-  panels kijken of daarnaar vragen aan de mods of de streamer zelf.", name:"Follows & subs", short:["Followen = subben op YouTube", "Subben = betalen voor extra's \
-  en support de streamer"]},
-    channelInfo: {text:"In deze balk kan je redelijk wat dingen zien en naar toe gaan. Als eerste zie je links de naam van de channel die je aan het kijken bent met het \
-  logo daarnaast. Hiernaast kan je alle opgeslagen video's van dat kanaal zien. Dit kunnen eerdere streams zijn, highlight van streams of zelf geüploade video's. \
-  Rechts staan alle clips die zijn gemaakt. Je kan deze sorteren op de top clips per tijdsvak. In deze balk staan ook het aantal volgers dat de stream heeft en \
-  hoeveel mensen de streamer zelf volgt. In deze balk kan je ook de evenementen zien die streamer heeft gemaakt. Dit kunnen bijvoorbeeld speciale streams zijn voor een \
-  verjaardag. Een streamer kan ook zijn video's of VOD's in een collectie doen. Collecties zijn playlists van verschillende video's, VOD's en uploads.", name:"Kanaal info",
-  short:["Links met meer dingen dan de stream", "Oude streams en clips terugkijken"]},
-    aanbevolenKanalen: {text:"Dit deel van de website laat een aantal aanbevolen kanalen zien. Deze kanalen kunnen kanalen zijn die je recent hebt gezien of kanalen die lijken op \
-  andere kanalen die je recent hebt gezien. Het is altijd handig om een kijkje te nemen bij deze streams, misschien zit er wat leuks tussen!", name:"Aanbevolen Kanalen",
-  short:["Laat andere, nieuwe kanalen zien voor je om te kijken"]},
-    aanbevolenVrienden: {text:"Dit deel van de website laat een aantal aanbevolen vrienden zien. Deze vrienden kunnen mensen zijn die je recent hebt gezien of mensen die dezelfde \
-  streams kijken als jou. Dit kunnen ook mensen zijn die jou volgen of moderaten bij hetzelfde kanaal als waar jij het doet.", name:"Aanbevolen vrienden",
-  short:["Laat andere, nieuwe vrienden zien voor om te bevrienden"]},
-    feed: {text:"In deze panels kan je allemaal zien wat een streamer te zeggen heeft over zijn stream. Hier kan onderanderen staan welke dagen en tijde de streamer \
-  streamt, hun setup, informatie over de stream of een donatie link. Vaak staan hier ook regels waar je je aan moet houden in de chat. Het is altijd handig om deze \
-  te lezen voordat je gaat chatten.", name:"Info", short:["Kleine panels met informatie over de stream en streamer"]},
-    infoPanels: {text:"Dit is de feed, wat ook wel bekend staat als Pulse. Hier kunnen streamers updates achterlaten. Dit kunnen updates zijn over wanneer ze gaan  \
-  streamen of misschien over iets totaal anders. Kijkers kunnen ook op deze berichten in de feed reageren door middel van een reactie of alleen een emote. \
-  De feed is niet iets wat iedereen aan heeft staan, dus je zal het niet altijd op elk kanaal terugvinden. Echter kan je wel alle messages terug vinden op de home pagina \
-  van Twitch zelf. <a href='https://help.twitch.tv/customer/nl/portal/articles/2752590-zo-gebruik-je-pulse' target='_blank'>Lees hier meer over Pulse</a>", name:"Pulse",
-  short:["Update feed van de streamer waar je op kan reageren"]},
-    volgenBladeren: {text:"Dit zijn waarschijnlijk wel twee van de belangrijkste dingen op Twitch. Als je op volgend drukt, kan je alle kanalen zien die jij hebt gevolgd. \
-  Bladeren geeft alle kanalen weer die op dat moment live zijn. Deze staan automatisch gesorteerd op het aantal kijkers. Zelf kan je ook nog een taal filter \
-  aanzetten zodat je bijvoorbeeld alleen nog maar Nederlandse kanalen ertussen ziet staan. Dit is erg handig om nieuwe streams te ontdekken. Als je plugins \
-  installeerd voor Twitch kunnen er meerdere balken komen te staan. Klik er dan gewoon is een keer erop zodat je kan zien wat je daar allemaal kan ontdekken. \
-  Ook kan je vanaf deze balk Turbo kopen, waar meer over wordt verteld onder Chat.", name:"Volgend en bladeren", short:["Volgend geeft al jou gevolgde kanalen weer die live zijn",
-  "Bladeren laat alle streams zien die live zijn", "Turbo laat je een speciale rank kopen"]},
-    vrienden: {text:"Vrienden is een feature op Twitch waarbij je met anderen bevriend kan raken. Zodra je bevriend met iemand bent, kan je het zien wanneer deze persoon \
-  online is op Twitch en kan je zien welke stream deze persoon aan het kijken is en als deze mensen ook de Twitch Desktop App hebben gedownload kan je ook zien welke games \
-  zij op dat moment aan het spelenz zijn. Op deze manier kan je ook weer nieuwe streams ontdekken en zien wat anderen doen. Ook kan je hierdoor zien \
-  wanneer een vriend het kanaal joined wat jij aan het kijken bent. Het is altijd wel handig om te wachten met hallo zeggen tegen die persoon totdat hij zelf hallo \
-  zegt, omdat niet altijd iedereen zin heeft om te chatten.", name:"Vrienden", short:["Voeg vrienden toe op Twitch", "Zie welke streams zij aan het kijken zijn of welke \
-  game ze aan het spelen zijn"] },
-    titleGame: {text:"Hier kan je heel makkelijk en overzichtelijk zien wat de titel van de stream is en welke game er wordt gespeeld op het moment. Ook zie je naast \
-  de game in welk team de streamer ziet en onder welke community hij streamt. Als je op een van deze klikt, wordt je doorverwezen naar een pagina met alle andere \
-  streamers die ook deze game spelen of onder dezelfde community streamen.", name:"Titel en game", short:["Zie de titel en de game die de streamer aan het doen is",
-  "Laat ook team en community zien waarin de streamer live is"] },
-    playerVod: {text:"Dit is de player. Als de stream live is kan je hier alle actie bekijken. Als de stream offline is, zie je de balk erboven staan. Deze balk heeft een \
-  link voor je klaarstaan van de vorige stream (de VOD). Als je halverwege was gestopt met kijken, kan je op de video klikken en meteen weer verder gaan kijken \
-  vanaf het punt waar je was gestopt.", name:"Speler en VOD", short:["Hier kan je de livestream zien", "Bovenste balk geeft laatste stream weer als de stream offline is"] },
-    chat: {text:"De chat is HET belangrijkste deel van heel Twitch. Hier kan jij namelijk met andere mensen en de stream praten. Hierdoor kan je invloed hebben op de stream \
-  die je aan het kijken bent. Je moet wel rekening houden met andere mensen die ook graag willen praten. Er zijn ook mods aanwezig in de chat die de chat rustig \
-  houden. Zij kunnen berichten verwijderen en mensen verbannen. Denk dus goed na voordat je wat zegt in de chat.", name:"Chat", short:["Hier kan je live met \
-  andere mensen en de streamer praten", "Mods houden de chat rustig"] },
-    login: {text:"Hier kan je al jou informatie zien zodra je bent ingelogd. Het is altijd wel handig om te kijken wat alles precies is, zodat je weet waar je alles kan \
-  vinden. Hier kan je ook instellingen van je kanaal veranderen of berichten lezen", name:"Login", short:["Hier log je in"] },
-    whispers: {text:"Fluisterberichten, ook wel bekend als whispers, is het systeem van Twitch om snel in prive met een ander persoon te praten. Hier kan je snel dingen \
-  overleggen of wat vragen stellen.", name:"Fluisterberichten", short:["Praat in prive met andere mensen"]},
-    nuLive: {text:"In dit deel van de zijbalk kan je alle kanalene zien die jij volgt en ook live zijn. Je kan dus vanaf elke stream direct weer naar een andere gaan. \
-  Standaard staan de top 5 kanelen bovenaan, maar als je op 'Meer laden' klikt, kan je alle live kanalene zien", name:"Gevolgde kanelen",
-  short:["Zie hier alle kanalen die je volgt en nu live zijn"]},
-}
-
-for (var i = 0; i < clicks.length; i++) {
-  clicks[i].addEventListener('click', function() {
-    var link = allImgs[this.id]
-    var text = allTexts[this.id].text
-    var title = allTexts[this.id].name
-    var short = allTexts[this.id].short
-    var imgWidth = this.id + "Width"
-    $("#modalImg").attr("src", link)
-    $("#modalText").html(title+"<br>")
-    for(var i = 0; i < short.length; i++) {
-      $("#modalText").append("<br>" + "x " + short[i])
-    }
-    $("#modalText").append("<br><br>" + text)
-    var width = allImgs[imgWidth] + 320
-    $("#modalInfo").width(width)
-    $('#modalInfo').removeClass('animated bounceOutUp');
-    $('#modalInfo').addClass('animated bounceInDown');
-    document.getElementById("modal").style.display = "block";
-  });
-}
-
-window.onclick = function(event) {
-  if(document.getElementById("modal").style.display == "block" && event.target == modal) {
-    $('#modalInfo').removeClass('animated bounceInDown');
-    $('#modalInfo').addClass('animated bounceOutUp');
-    setTimeout(function () { document.getElementById("modal").style.display = "none" }, 1000);
+$.getJSON("./watis.json", function(data) {
+  var allModal = data.allModal
+  console.log(allModal)
+  var clicks = document.getElementsByClassName("click");
+  for (var i = 0; i < clicks.length; i++) {
+    clicks[i].addEventListener('click', function() {
+      var link = allModal[this.id].link
+      var text = allModal[this.id].text
+      var title = allModal[this.id].name
+      var short = allModal[this.id].short
+      var imgWidth = allModal[this.id].width
+      $("#modalImg").attr("src", link)
+      $("#modalText").html(title+"<br>")
+      for(var i = 0; i < short.length; i++) {
+        $("#modalText").append("<br>" + "x " + short[i])
+      }
+      $("#modalText").append("<br><br>" + text)
+      var width = imgWidth + 320
+      $("#modalInfo").width(width)
+      $('#modalInfo').removeClass('animated bounceOutUp');
+      $('#modalInfo').addClass('animated bounceInDown');
+      document.getElementById("modal").style.display = "block";
+    });
   }
-};
+
+  window.onclick = function(event) {
+    if(document.getElementById("modal").style.display == "block" && event.target == modal) {
+      $('#modalInfo').removeClass('animated bounceInDown');
+      $('#modalInfo').addClass('animated bounceOutUp');
+      setTimeout(function () { document.getElementById("modal").style.display = "none" }, 1000);
+    }
+  };
+})
