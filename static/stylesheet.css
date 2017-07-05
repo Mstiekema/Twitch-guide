@@ -105,8 +105,8 @@ a .menuItemDrop:hover {
 
 .menu {
 	text-align: center;
-	width: 900px;
-	margin-left: -50px;
+	width: 1000px;
+	margin-left: -5px;
 }
 
 a .menuItem:hover {
@@ -126,8 +126,12 @@ a .menuItem:hover {
 	bottom: 0px;
 }
 
+#pa {
+	margin-top: 85px;
+}
+
 html, .row {
-	background-color: #8c74b9;
+	background-color: #ffffff;
 	font-family: 'Roboto', sans-serif;
 }
 

@@ -25,6 +25,10 @@ app.get('/chat', function (req, res) {
 	res.render('chat.html')
 })
 
+app.get('/groeien', function (req, res) {
+	res.render('groeien.html')
+})
+
 app.get('/plugins', function (req, res) {
 	res.render('plugins.html')
 })

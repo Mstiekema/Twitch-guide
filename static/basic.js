@@ -1,5 +1,5 @@
 window.onresize = function(event) {
-  if(window.innerWidth < 850) {
+  if(window.innerWidth < 1000) {
     $("#standard-menu").addClass("hidden");
     $("#dropdown-menu").removeClass("hidden");
   } else {
@@ -9,7 +9,7 @@ window.onresize = function(event) {
 }
 
 $(document).ready(function(){
-  if(window.innerWidth < 850) {
+  if(window.innerWidth < 1000) {
     $("#standard-menu").addClass("hidden");
     $("#dropdown-menu").removeClass("hidden");
   } else {

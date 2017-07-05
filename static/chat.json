@@ -30,6 +30,12 @@
 			"link": "http://i.imgur.com/yDZq8TX.png",
 			"long": "Dit is de icon van de streamer waar je naar aan het kijken bent. Tijdens de stream praat deze persoon waarschijnlijk nauwelijks in de chat omdat hij of zij bezig is met de stream."
 		},
+		"verified": {
+			"name": "Verified",
+			"short": "Badge speciaal voor Twitch partners",
+			"link": "http://i.imgur.com/n1Sk6k9.png",
+			"long": "Als een streamer een Twitch partner is, krijgt hij naast een sub button en alle andere perks ook een icon die iedereen op de website kan zien. Zo valt elke partner dus op in de chat. Deze badge, net zoals de meeste andere, kan ook worden uitgezet."
+		},
 		"turbo": {
 			"name": "Turbo",
 			"short": "Betaalde service van Twitch",
@@ -40,7 +46,7 @@
 			"name": "Twitch Prime",
 			"short": "Betaalde service in samenwerking met Amazon",
 			"link": "http://i.imgur.com/jc0JCji.png",
-			"long": "Prime is een vernieuwde methode om Twitch en hun streamers te helpen. Door gebruik te maken van Amazon Prime kan je voor 11 dollar per maand veel extra's krijgen. Je kan het zien als een verbeterde versie van Turbo, omdat je de Turbo perks krijgt, maar ook andere extra's zoals: In-game items, 1x gratis subben op een kanaal per maand en alle mogelijkheden van Amazon Prime! Dit is echter helaas nog niet beschikbaar in Nederland. Sommige mensen in Belgie of in de Duitse grensgebieden kunnen het al wel halen. Voor meer info over Prime klik <a href='https://help.twitch.tv/customer/portal/articles/2572060-twitch-prime-guide' target='_blank'>HIER</a> (ENGELS)."
+			"long": "Prime is een vernieuwde methode om Twitch en hun streamers te helpen. Door gebruik te maken van Amazon Prime Video kan je voor 6 euro per maand veel extra's krijgen. Je kan het zien als een verbeterde versie van Turbo, omdat je de Turbo perks krijgt, maar ook andere extra's zoals: In-game items, 1x gratis subben op een kanaal per maand en alle mogelijkheden van Amazon Prime Video! Als je Amazon Prime hebt, kan je dit ook gebruiken in plaats van Amazon Prime Video. Voor meer info over Twitch Prime klik <a href='https://nl.blog.twitch.tv/twitch-prime-neemt-de-wereld-over-met-exclusieve-gear-in-playerunknowns-battlegrounds-en-meer-e0cfb88d1257' target='_blank'>HIER</a>."
 		},
 		"cheer": {
 			"name": "Cheers",
@@ -51,7 +57,7 @@
 		"sub": {
 			"name": "Subscriber",
 			"short": "Mensen die maandelijks geld betalen voor extra's in de chat",
-			"link": "http://i.imgur.com/yOfAjSi.png",
+			"link": "http://i.imgur.com/zVB5s5P.png",
 			"long": "Elke channel heeft zijn eigen subscriber icon. Je kan dit zien door met je muis over de icon heen te gaan. Als je dit doet, kan je ook zien hoe lang deze persoon als een subscriber is. Deze zwarte ster is de standaard sub icon op Twitch. Als je deze ziet is de streamer dus pas net een partner."
 		},
 		"other": {
